@@ -21,3 +21,8 @@ int RandomNumber::getRandomNumber()
 	}
 	return rand() % mUserMaxValue + mUserMinValue;
 }
+
+int RandomNumber::storeRandomNumber()
+{
+	this->mCurrentRandomNumber = getRandomNumber();
+}
